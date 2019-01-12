@@ -5,7 +5,7 @@
 
 def alphabet_position(text):
     output = ""
-    alpha = "abcdefghijklmnoprstuvwxyz"
+    alpha = "abcdefgqhijklmnoprstuvwxyz"
     for ch in text:
         if ch.lower() in alpha: 
             if len(output) == 0:    
