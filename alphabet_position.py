@@ -5,9 +5,10 @@
 
 def alphabet_position(text):
     output = ""
+    alpha = "abcdefghijklmnoprstuvwxyz"
     for ch in text:
-        if ch.isalpha(): 
-            if len(output) == 0:
+        if ch.lower() in alpha: 
+            if len(output) == 0:    
                output += str(ord(ch.lower())-96) 
             else:   
                output += " " + str(ord(ch.lower())-96)
